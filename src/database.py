@@ -1,0 +1,22 @@
+import os
+from supabase import create_client
+from dotenv import load_dotenv
+
+load_dotenv()
+
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+
+print(SUPABASE_KEY, SUPABASE_URL)
+supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
+
+
+def get_contacts(limit=3):
+    response = (
+        supabase.table("contacts")
+        .select("*")
+        .limit(limit)
+        .execute()
+    )
+
+    return response.data

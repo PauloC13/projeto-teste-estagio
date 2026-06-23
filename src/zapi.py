@@ -6,7 +6,6 @@ load_dotenv()
 
 INSTANCE_ID = os.getenv("ZAPI_INSTANCE_ID")
 TOKEN = os.getenv("ZAPI_TOKEN")
-CLIENT_TOKEN = os.getenv("ZAPI_CLIENT_TOKEN")
 
 
 def send_message(phone, message):

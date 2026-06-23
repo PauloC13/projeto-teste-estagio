@@ -29,11 +29,11 @@ cp .env.example .env
 Preencha:
 
 ```env
-SUPABASE_URL=https://tikwpwqjfxltetxrzlou.supabase.co
-SUPABASE_KEY=sb_publishable_d1WI980FEn35IlHyDvkXBg_uoY_phzH
+SUPABASE_URL=
+SUPABASE_KEY=
 
-ZAPI_INSTANCE_ID=3F509C8E6F4B32E77C23D2DE7131D002
-ZAPI_TOKEN=A00DD833D1D88E77B1942308
+ZAPI_INSTANCE_ID=
+ZAPI_TOKEN=
 ```
 
 ## Instalação
